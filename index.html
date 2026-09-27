@@ -3,8 +3,22 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>iboshka24 — разработчик, Ташкент</title>
+<title>iboshka24 — AI-разработчик из Ташкента</title>
 <meta name="description" content="AI-разработчик из Ташкента: продукты с моделями внутри, проверяемый код и бесплатные сервисы для учёбы. Открытый исходный код." />
+<link rel="canonical" href="https://iboshka24.vercel.app/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="iboshka24" />
+<meta property="og:title" content="iboshka24 — продукты с моделями внутри" />
+<meta property="og:description" content="AI-разработчик из Ташкента. 35 405 вопросов в банке, из них 11 903 открыты всем. Открытый исходный код." />
+<meta property="og:url" content="https://iboshka24.vercel.app/" />
+<meta property="og:image" content="https://iboshka24.vercel.app/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="ru_RU" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="iboshka24 — продукты с моделями внутри" />
+<meta name="twitter:description" content="AI-разработчик из Ташкента. 35 405 вопросов, 11 903 бесплатно." />
+<meta name="twitter:image" content="https://iboshka24.vercel.app/og.png" />
 <meta name="theme-color" content="#0f1412" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +27,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f1412'/%3E%3Crect x='7' y='8' width='4' height='16' fill='%23ff6a1f'/%3E%3Crect x='14' y='8' width='11' height='4' fill='%23c7f94e'/%3E%3C/svg%3E" />
 </head>
 <body>
+
+<a class="skip" href="#top">Перейти к содержимому</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav">
   <a class="mark" href="#top">iboshka24</a>
@@ -46,6 +63,13 @@
       <div class="term-bar"><i></i><i></i><i></i><span>ibrohim@iboshka — zsh</span></div>
       <pre id="typed"></pre>
     </div>
+  </section>
+
+  <section class="proof" aria-label="Числа, которые можно проверить">
+    <div class="proof-item"><b>35 405</b><span>вопросов в банке — посчитано по файлу</span></div>
+    <div class="proof-item"><b>11 903</b><span>из них открыты всем</span></div>
+    <div class="proof-item"><b>55</b><span>разделов на четырёх языках</span></div>
+    <div class="proof-item"><b>308</b><span>тестов проходят до коммита</span></div>
   </section>
 
   <section id="about" class="block">
@@ -92,6 +116,13 @@
            по результату запроса, а не по тексту. Без сборки и без CDN — SQLite в WebAssembly
            лежит в репозитории, чтобы работать без интернета.</p>
         <div class="chips"><span>JavaScript</span><span>WebAssembly</span><span>6 задач</span></div>
+        <details>
+          <summary>Как я это проверял</summary>
+          <p>Гонял в настоящем браузере: верный запрос отвечает «Пройдено. Строк 8, колонок 2»,
+             неверный — отказ, <code>HAVING</code> и <code>JOIN</code> проходят, синтаксическая ошибка
+             объясняется словами. SQLite лежит в репозитории, потому что с CDN тренажёр ломается
+             без интернета, а без интернета он и нужен.</p>
+        </details>
       </article>
 
       <article class="card">
@@ -100,6 +131,12 @@
            от массы тела, дефицит, который не опускается ниже 1500 ккал, и предупреждения
            вместо молчаливого согласия. 9 тестов.</p>
         <div class="chips"><span>JavaScript</span><span>без зависимостей</span><span>MIT</span></div>
+        <details>
+          <summary>Как я это проверял</summary>
+          <p>Формула Миффлина — Сан Жеора, белок 1,6–2,0 г на кг, дефицит не глубже 1% массы тела
+             в неделю. Три теста сначала падали — оказалось, ожидания в них были завышены;
+             я поправил тесты, а не код, и объяснил в коммите, почему.</p>
+        </details>
       </article>
 
       <article class="card">
@@ -108,6 +145,12 @@
            настоящий фильтр: с коленом в план не попадут выпады, со спиной — становая,
            и каждому убранному упражнению подбирается замена. 10 тестов.</p>
         <div class="chips"><span>JavaScript</span><span>без зависимостей</span><span>MIT</span></div>
+        <details>
+          <summary>Как я это проверял</summary>
+          <p>Тесты проверяют не «план не пустой», а суть: выпадов с больным коленом в плане нет,
+             день при этом не остаётся пустым, а замена идёт на ту же группу мышц. Приложение
+             <b>Forma</b> для Telegram использует этот же движок — там фильтр работает вживую.</p>
+        </details>
       </article>
 
       <article class="card">

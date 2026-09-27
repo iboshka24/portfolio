@@ -69,5 +69,16 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+const bar = document.getElementById("progress");
+if (bar) {
+  const tick = () => {
+    const height = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (height > 0 ? (window.scrollY / height) * 100 : 0) + "%";
+  };
+  tick();
+  window.addEventListener("scroll", tick, { passive: true });
+  window.addEventListener("resize", tick);
+}
+
 const year = document.getElementById("year");
 if (year) year.textContent = String(new Date().getFullYear());
