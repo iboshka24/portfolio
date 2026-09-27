@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>iboshka24 — разработчик, Ташкент</title>
-<meta name="description" content="Разработчик из Ташкента: Linux, Hackintosh, инструменты и бесплатные сервисы для учёбы. Открытый исходный код." />
+<meta name="description" content="AI-разработчик из Ташкента: продукты с моделями внутри, проверяемый код и бесплатные сервисы для учёбы. Открытый исходный код." />
 <meta name="theme-color" content="#0f1412" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,10 +28,11 @@
 
   <section class="hero">
     <div class="hero-text">
-      <p class="eyebrow">Ташкент · разработчик</p>
+      <p class="eyebrow">Ташкент · AI-разработчик</p>
       <h1>Собираю то, <br />чего мне не хватало.</h1>
       <p class="lead">
-        Linux всерьёз, Hackintosh терпеливо, код — так, чтобы его можно было проверить.
+        Делаю продукты, внутри которых работают модели: агенты, которые сами собирают данные
+        и проверяют результат, и интерфейсы, которые честно говорят, чего не знают.
         Самый большой проект — бесплатная подготовка к экзаменам: 35 405 вопросов,
         из них 11 903 открыты всем.
       </p>
@@ -51,24 +52,24 @@
     <h2 class="block-title">Обо мне</h2>
     <div class="two">
       <p>
-        Мне интересен слой под слоем: ядра, драйверы, установщики, упаковка. Установка Arch
-        руками — до сих пор мой любимый способ провести вечер, потому что после неё знаешь,
-        из чего состоит система.
+        Я работаю с моделями как с коллегами, а не как с автодополнением. <b>Hermes Agent</b>
+        (автономный агент Nous Research) на моделях <b>DeepSeek</b> держит серверы, пересобирает
+        банк вопросов, гоняет тесты и снимает доказательства. Я решаю, что строить, и отвечаю
+        за то, что получилось.
       </p>
       <p>
-        Hackintosh научил терпению: пока читаешь чужие kext'ы и таблицы ACPI, понимаешь, что
-        система — это не магия, а список чьих-то решений, и его можно прочитать. Windows
-        держу только для игр.
+        Отсюда привычка, которую видно во всех проектах: <b>утверждение должно быть проверяемым</b>.
+        Тест пересчитывает ответ по условию независимо от генератора. Тренажёр SQL сравнивает
+        результат запроса с эталоном, а не текст. Если я чего-то не проверял — так и говорю.
       </p>
       <p>
-        Работаю с <b>Hermes Agent</b> (автономный агент Nous Research) на моделях
-        <b>DeepSeek</b>: агент гоняет серверы, пересобирает банк вопросов, снимает скриншоты
-        и обязан подтверждать результат доказательствами, а не отчётом об успехе.
+        Внутри продуктов это выглядит как функции, а не как «магия ИИ»: разбор ошибки у
+        ученика, план тренировок под ограничения по колену, подсказка, которая знает, что
+        ответ уже был.
       </p>
       <p>
-        Числа, которые я называю, всегда измерены: количество вопросов — из собранного файла,
-        вклады — из GitHub, время — из настоящих прогонов. Если чего-то не проверял, так и
-        говорю.
+        Остальное — любопытство к тому, как всё устроено: иногда это Linux и Hackintosh,
+        иногда установщики, иногда просто желание понять, почему драйвер не поднялся.
       </p>
     </div>
   </section>
@@ -137,18 +138,25 @@
     <h2 class="block-title">Стек и машины</h2>
     <div class="two">
       <div>
-        <h3 class="mini">Код</h3>
+        <h3 class="mini">AI и агенты</h3>
         <div class="chips big">
-          <span>TypeScript</span><span>Next.js</span><span>React</span><span>Node.js</span>
-          <span>Python</span><span>Rust</span><span>Kotlin</span><span>PostgreSQL</span>
-          <span>Valkey</span><span>Docker</span>
+          <span>Hermes Agent</span><span>DeepSeek</span>
+          <span>ассистент к вопросу · 5 бесплатных в день</span>
+        </div>
+        <p class="mini dim" style="margin-top:10px;font-weight:400">
+          В работе: разбор ошибки моделью, еда по фото. Пока этого нет — в стеке этого нет.
+        </p>
+        <h3 class="mini" style="margin-top:22px">Код</h3>
+        <div class="chips big">
+          <span>TypeScript</span><span>Next.js</span><span>Node.js</span><span>Python</span>
+          <span>Rust</span><span>Kotlin</span><span>PostgreSQL</span><span>Docker</span>
         </div>
       </div>
       <div>
-        <h3 class="mini">Системы</h3>
+        <h3 class="mini">Железо и системы</h3>
         <div class="chips big">
-          <span>CachyOS · KDE Wayland</span><span>Arch руками</span><span>Hackintosh · OpenCore</span>
-          <span>Windows для игр</span><span>Neovim</span>
+          <span>Postgres и Valkey без root</span><span>Playwright для проверок</span>
+          <span>CachyOS · KDE Wayland</span><span>Hackintosh · OpenCore</span><span>Neovim</span>
         </div>
       </div>
     </div>
@@ -157,9 +165,10 @@
   <section class="block">
     <h2 class="block-title">Сейчас</h2>
     <ul class="now">
-      <li><b>Forma</b> — питание и тренировки в одном приложении для Telegram: кольцо калорий, план по инвентарю, вход через Google и Telegram.</li>
-      <li><b>kod</b> — расширяю до курса: компилятор C, живое превью HTML и CSS, трек про вёрстку.</li>
-      <li><b>Vendra Teach</b> — банк вопросов и разбор ошибок; впереди ещё много разделов без единого вопроса.</li>
+      <li><b>Разбор ошибок моделью</b> — чтобы ученик читал «вот здесь ты перепутал путь при равноускоренном движении», а не «неверно».</li>
+      <li><b>Распознавание еды по фото</b> для Forma: фото в чат боту → блюдо, порция, макросы → запись в дневник.</li>
+      <li><b>kod</b> — расширяю до курса: компилятор C в песочнице, живое превью HTML и CSS, трек про вёрстку.</li>
+      <li><b>Vendra Teach</b> — банк вопросов: 55 разделов, и во многих ещё нет ни одного вопроса.</li>
     </ul>
   </section>
 
