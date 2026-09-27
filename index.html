@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iboshka24 — разработчик, Ташкент</title>
+<meta name="description" content="Разработчик из Ташкента: Linux, Hackintosh, инструменты и бесплатные сервисы для учёбы. Открытый исходный код." />
+<meta name="theme-color" content="#0f1412" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f1412'/%3E%3Crect x='7' y='8' width='4' height='16' fill='%23ff6a1f'/%3E%3Crect x='14' y='8' width='11' height='4' fill='%23c7f94e'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="nav">
+  <a class="mark" href="#top">iboshka24</a>
+  <nav>
+    <a href="#about">обо мне</a>
+    <a href="#work">проекты</a>
+    <a href="#stack">стек</a>
+    <a href="https://github.com/iboshka24" rel="me noopener">github</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Ташкент · разработчик</p>
+      <h1>Собираю то, <br />чего мне не хватало.</h1>
+      <p class="lead">
+        Linux всерьёз, Hackintosh терпеливо, код — так, чтобы его можно было проверить.
+        Самый большой проект — бесплатная подготовка к экзаменам: 35 405 вопросов,
+        из них 11 903 открыты всем.
+      </p>
+      <div class="hero-links">
+        <a class="btn" href="#work">Смотреть проекты</a>
+        <a class="btn ghost" href="https://github.com/iboshka24">GitHub</a>
+      </div>
+    </div>
+
+    <div class="terminal" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>ibrohim@iboshka — zsh</span></div>
+      <pre id="typed"></pre>
+    </div>
+  </section>
+
+  <section id="about" class="block">
+    <h2 class="block-title">Обо мне</h2>
+    <div class="two">
+      <p>
+        Мне интересен слой под слоем: ядра, драйверы, установщики, упаковка. Установка Arch
+        руками — до сих пор мой любимый способ провести вечер, потому что после неё знаешь,
+        из чего состоит система.
+      </p>
+      <p>
+        Hackintosh научил терпению: пока читаешь чужие kext'ы и таблицы ACPI, понимаешь, что
+        система — это не магия, а список чьих-то решений, и его можно прочитать. Windows
+        держу только для игр.
+      </p>
+      <p>
+        Работаю с <b>Hermes Agent</b> (автономный агент Nous Research) на моделях
+        <b>DeepSeek</b>: агент гоняет серверы, пересобирает банк вопросов, снимает скриншоты
+        и обязан подтверждать результат доказательствами, а не отчётом об успехе.
+      </p>
+      <p>
+        Числа, которые я называю, всегда измерены: количество вопросов — из собранного файла,
+        вклады — из GitHub, время — из настоящих прогонов. Если чего-то не проверял, так и
+        говорю.
+      </p>
+    </div>
+  </section>
+
+  <section id="work" class="block">
+    <h2 class="block-title">Проекты</h2>
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-head"><h3>Vendra Teach</h3><span class="tag">закрытый</span></div>
+        <p>Платформа подготовки к экзаменам: Digital SAT, IELTS, Milliy Sertifikat и AP.
+           35 405 вопросов в 55 разделах на четырёх языках, повторение ошибок по интервалам,
+           режим экзамена с таймером. 11 903 вопроса открыты бесплатно.</p>
+        <div class="chips"><span>Next.js</span><span>PostgreSQL</span><span>тесты</span></div>
+      </article>
+
+      <article class="card">
+        <a class="card-head" href="https://github.com/iboshka24/kod"><h3>kod</h3><span class="tag accent">открытый</span></a>
+        <p>Бесплатный тренажёр SQL: настоящая база данных в браузере, задачи проверяются
+           по результату запроса, а не по тексту. Без сборки и без CDN — SQLite в WebAssembly
+           лежит в репозитории, чтобы работать без интернета.</p>
+        <div class="chips"><span>JavaScript</span><span>WebAssembly</span><span>6 задач</span></div>
+      </article>
+
+      <article class="card">
+        <a class="card-head" href="https://github.com/iboshka24/nutrition-math"><h3>nutrition-math</h3><span class="tag accent">открытый</span></a>
+        <p>Калории и макросы из собственных данных: формула Миффлина — Сан Жеора, белок
+           от массы тела, дефицит, который не опускается ниже 1500 ккал, и предупреждения
+           вместо молчаливого согласия. 9 тестов.</p>
+        <div class="chips"><span>JavaScript</span><span>без зависимостей</span><span>MIT</span></div>
+      </article>
+
+      <article class="card">
+        <a class="card-head" href="https://github.com/iboshka24/workout-plan"><h3>workout-plan</h3><span class="tag accent">открытый</span></a>
+        <p>Неделя тренировок по дням, минутам, инвентарю и ограничениям. Ограничение —
+           настоящий фильтр: с коленом в план не попадут выпады, со спиной — становая,
+           и каждому убранному упражнению подбирается замена. 10 тестов.</p>
+        <div class="chips"><span>JavaScript</span><span>без зависимостей</span><span>MIT</span></div>
+      </article>
+
+      <article class="card">
+        <a class="card-head" href="https://github.com/iboshka24/exam-figure-svg"><h3>exam-figure-svg</h3><span class="tag accent">открытый</span></a>
+        <p>Рисует экзаменационные чертежи — линии, параболы, диаграммы рассеяния, таблицы —
+           из данных сразу в печатный SVG. Ни одна комбинация входа не даёт <code>NaN</code>.</p>
+        <div class="chips"><span>SVG</span><span>без зависимостей</span><span>MIT</span></div>
+      </article>
+
+      <article class="card">
+        <a class="card-head" href="https://github.com/iboshka24/spaced-repetition-queue"><h3>spaced-repetition-queue</h3><span class="tag accent">открытый</span></a>
+        <p>Отвечает на вопрос «когда показать этот вопрос снова» — интервальное повторение
+           примерно в двухстах строках, с тестами. Вынут из платформы выше.</p>
+        <div class="chips"><span>JavaScript</span><span>без зависимостей</span><span>MIT</span></div>
+      </article>
+
+      <article class="card">
+        <a class="card-head" href="https://github.com/iboshka24/ShobikaOs"><h3>ShobikaOs</h3><span class="tag accent">открытый</span></a>
+        <p>Дистрибутив Linux на базе Arch: установщик на Rust и GTK4, автоматическое определение
+           драйверов, PipeWire, настройка под игры. ISO собирается на каждый push.</p>
+        <div class="chips"><span>Rust</span><span>GTK4</span><span>Arch</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack" class="block">
+    <h2 class="block-title">Стек и машины</h2>
+    <div class="two">
+      <div>
+        <h3 class="mini">Код</h3>
+        <div class="chips big">
+          <span>TypeScript</span><span>Next.js</span><span>React</span><span>Node.js</span>
+          <span>Python</span><span>Rust</span><span>Kotlin</span><span>PostgreSQL</span>
+          <span>Valkey</span><span>Docker</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="mini">Системы</h3>
+        <div class="chips big">
+          <span>CachyOS · KDE Wayland</span><span>Arch руками</span><span>Hackintosh · OpenCore</span>
+          <span>Windows для игр</span><span>Neovim</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="block-title">Сейчас</h2>
+    <ul class="now">
+      <li><b>Forma</b> — питание и тренировки в одном приложении для Telegram: кольцо калорий, план по инвентарю, вход через Google и Telegram.</li>
+      <li><b>kod</b> — расширяю до курса: компилятор C, живое превью HTML и CSS, трек про вёрстку.</li>
+      <li><b>Vendra Teach</b> — банк вопросов и разбор ошибок; впереди ещё много разделов без единого вопроса.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div>
+    <a href="https://github.com/iboshka24">github.com/iboshka24</a>
+  </div>
+  <div class="dim">Сделано в Ташкенте. <span id="year"></span></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
